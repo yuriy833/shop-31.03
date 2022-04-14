@@ -1,0 +1,110 @@
+.header {
+    background-color: $black;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+    position: relative;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__wrp-logo-form {
+    display: flex;
+}
+
+.header__search-input {
+    background: transparent;
+}
+
+.header__search-input:hover {
+    outline: 1px solid red;
+}
+
+.header__search:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    top: 13px;
+    left: 7px;
+    background-image: url("../img/loupe.svg");
+    background-size: 10px 10px;
+}
+
+.header__search-input {
+    padding: 10px 20px;
+    border: none;
+    outline: 1px solid black;
+    color: $light-grey;
+}
+
+.header__item {
+    margin: 0 0 0 34px;
+}
+
+.header__nav {
+    display: none;
+    position: absolute;
+    width: 232px;
+    top: 100%;
+    right: -280px;
+    background: white;
+}
+
+.header__button {
+    border: none;
+    background-color: transparent;
+}
+
+
+.header__burger-icon {
+    fill: $white;
+}
+
+.header__burger-icon:hover,
+.header__burger-icon:focus {
+    fill: $dark-grey;
+}
+
+.header__burger-icon:active {
+    fill: $dark-pink;
+}
+
+.header__nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header__button:hover+.header__nav,
+.header__button:focus+.header__nav {
+    display: block;
+}
+
+.header__nav:hover {
+    display: block;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+    text-transform: uppercase;
+    padding: 37px 0 24px 34px;
+}
