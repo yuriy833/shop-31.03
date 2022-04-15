@@ -5,21 +5,47 @@
 
 .brand__title-wrp {
     flex-grow: 1;
-    padding: 0 0 0 92px;
+    padding: 0 0 0 68px;
     display: flex;
     align-items: center;
     background-color: $light-pink;
+
+    @include tablet {
+        padding: 0 0 0 92px;
+    }
+
+    @include mobile {
+        min-height: 363px;
+        padding: 0 0 0 83px;
+    }
+}
+
+.brand__img {
+    @include tablet {
+        width: 50%;
+        min-height: 370px;
+        object-fit: cover;
+    }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .brand__title {
-    // font-size: 48px;
-    // font-weight: 900;
-    // line-height: 58px;
     @include font (48px, 58px, 900);
     text-transform: uppercase;
     position: relative;
     display: block;
     margin: 20px;
+
+    @include tablet {
+        @include font (52px, 44px, 900);
+    }
+
+    @include mobile {
+        @include font (38px, 45px, 900)
+    }
 }
 
 .brand__title:before {
@@ -35,11 +61,51 @@
 .brand__subtitle {
     display: block;
     @include font (37px, 44px, 700);
-    // font-size: 37px;
-    // font-weight: 700;
-    // line-height: 44px;
+
+    @include tablet {
+        @include font(28px, 24px, 700);
+    }
+
+    @include mobile {
+        @include font(20px, 24px, 700);
+    }
 }
 
 .brand__subtitle-pink {
     color: $dark-pink;
+}
+
+@media (max-width: $tablet-width) {
+    .brand__img {
+        width: 50%;
+        height: 368px;
+        object-fit: cover;
+    }
+
+    .brand__title-wrp {
+        width: 50%;
+        min-height: 368px;
+    }
+
+    .brand__title {
+        @include font(44px, 53px, 900);
+    }
+
+    .brand__subtitle {
+        @include font(24px, 29px, 700);
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .brand__img {
+        display: none;
+    }
+
+    .brand__title {
+        @include font(38px, 46px, 900);
+    }
+
+    .brand__subtitle {
+        @include font(20px, 24px, 700);
+    }
 }
