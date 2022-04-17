@@ -1,5 +1,13 @@
 .advantage {
     background-color: $black;
+
+    @include tablet {
+        padding: 48px 0 64px 0;
+    }
+
+    @include mobile {
+        padding: 48px 0 81px 0;
+    }
 }
 
 .advantage__list {
@@ -8,19 +16,29 @@
     align-items: center;
     min-height: 341px;
     text-align: center;
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.advantage__item {
+    max-width: 360px;
+    text-align: center;
+
+    @include tablet {
+        margin: 24px 0;
+    }
 }
 
 .advantage__title {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    @include font (20px);
     color: #FBFBFB;
     padding: 25px 0 16px 0;
 }
 
 .advantage__text {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include font (14px, 17px, 300);
     color: #FBFBFB;
 }
