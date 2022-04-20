@@ -23,10 +23,18 @@
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    width: 360px;
+    width: 31.6%;
     background-color: $light-grey;
     margin: 0 0 30px 0;
     text-align: left;
+
+    @include tablet-mid-width {
+        width: 49%;
+    }
+
+    @include tablet-mobile-mid {
+        width: 100%;
+    }
 }
 
 .catalog__link {
@@ -35,6 +43,11 @@
 
 .catalog__item-wrp {
     position: relative;
+}
+
+.catalog__img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .catalog__item-overlay {
