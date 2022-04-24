@@ -7,7 +7,7 @@
 .sales__item {
     padding: 20px;
     box-sizing: border-box;
-    width: 360px;
+    width: 31.6%;
     min-height: 260px;
     background-color: $sales-bkg-color;
     text-transform: uppercase;
@@ -18,6 +18,11 @@
     @include tablet {
         width: 31.6%;
         min-height: 167px
+    }
+
+    @include tablet-mobile-mid {
+        width: 100%;
+        height: 247px;
     }
 
     @include mobile {
