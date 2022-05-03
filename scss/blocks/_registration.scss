@@ -1,0 +1,126 @@
+.registration {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0 96px;
+
+    @include tablet {
+        margin: 40px 0 96px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .registration__form {
+        width: 31.6%;
+
+        @include tablet {
+            width: 100%;
+            margin: 0 22px 0 0;
+        }
+    }
+
+    .registration__fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .registration__legend {
+        @include font(16px, 19px, 300);
+        margin: 0 0 10px;
+    }
+
+    .registration__input {
+        margin: 10px 0;
+        height: 45px;
+        padding: 0 17px;
+    }
+
+    .registration__radio {
+        margin: 20px 0 32px;
+    }
+
+    .registration__input-radio {
+        margin: 0 10px 0 20px;
+    }
+
+    .registration__text-form {
+        @include font(13px, 16px, 300);
+        opacity: 0.4;
+        margin: 0 0 39px;
+    }
+
+    .registration__button {
+        padding: 16px 0 16px 29px;
+        height: 49px;
+        background-color: $dark-pink;
+        color: $white;
+        border: none;
+        text-transform: uppercase;
+
+        @include mobile {
+            margin: 0 0 40px;
+        }
+
+        &:active {
+            background-color: $black-pink;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: 5px 5px 10px 2px $shadow;
+            cursor: pointer;
+            outline: none;
+        }
+
+        &::after {
+            content: url(../img/arrow-ico.svg);
+            margin: 0 20px 0;
+        }
+    }
+
+    .registration__wrp {
+        width: 57.2%;
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+
+    .registration__title {
+        @include font(24px, 29px, 300);
+        text-transform: uppercase;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+    }
+
+    .registration__text {
+        @include font(24px, 29px, 300);
+        margin: 22px 0;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+            margin: 32px 0 22px;
+        }
+    }
+
+    .registration__item {
+        display: flex;
+        margin: 16px 0;
+
+        &:before {
+            content: url(../img/check-ico.svg);
+            margin: 0 23px 0 0;
+        }
+    }
+
+    .registration__text-sub {
+        @include font(24px, 29px, 300);
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+    }
+}
