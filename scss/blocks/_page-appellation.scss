@@ -1,0 +1,36 @@
+.page-appellation {
+    background-color: $light-pink;
+    height: 148px;
+    display: flex;
+    align-items: center;
+
+    .page-appellation__wrp {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet-mid-width {
+            flex-direction: column;
+        }
+    }
+
+    .page-appellation__title {
+        color: $dark-pink;
+        @include font(24px, 29px);
+        text-transform: uppercase;
+        box-sizing: border-box;
+
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    .page-appellation__list {
+        text-transform: uppercase;
+        color: $dark-pink;
+    }
+
+    .page-appellation__link {
+        text-decoration: none;
+        color: $grey;
+    }
+}

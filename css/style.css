@@ -930,4 +930,214 @@ body {
 .footer__item {
   margin: 0 0 0 8px;
 }
+
+.page-appellation {
+  background-color: #F1E4E6;
+  height: 148px;
+  display: flex;
+  align-items: center;
+}
+
+.page-appellation .page-appellation__wrp {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .page-appellation .page-appellation__wrp {
+    flex-direction: column;
+  }
+}
+
+.page-appellation .page-appellation__title {
+  color: #F16D7F;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+@media (max-width: 375px) {
+  .page-appellation .page-appellation__title {
+    text-align: center;
+  }
+}
+
+.page-appellation .page-appellation__list {
+  text-transform: uppercase;
+  color: #F16D7F;
+}
+
+.page-appellation .page-appellation__link {
+  text-decoration: none;
+  color: #9F9F9F;
+}
+
+.registration {
+  display: flex;
+  justify-content: space-between;
+  margin: 64px 0 96px;
+}
+
+@media (max-width: 767px) {
+  .registration {
+    margin: 40px 0 96px;
+  }
+}
+
+@media (max-width: 375px) {
+  .registration {
+    flex-direction: column;
+  }
+}
+
+.registration .registration__form {
+  width: 31.6%;
+}
+
+@media (max-width: 767px) {
+  .registration .registration__form {
+    width: 100%;
+    margin: 0 22px 0 0;
+  }
+}
+
+.registration .registration__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration .registration__legend {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0 0 10px;
+}
+
+.registration .registration__input {
+  margin: 10px 0;
+  height: 45px;
+  padding: 0 17px;
+}
+
+.registration .registration__radio {
+  margin: 20px 0 32px;
+}
+
+.registration .registration__input-radio {
+  margin: 0 10px 0 20px;
+}
+
+.registration .registration__text-form {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
+  opacity: 0.4;
+  margin: 0 0 39px;
+}
+
+.registration .registration__button {
+  padding: 16px 0 16px 29px;
+  height: 49px;
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  border: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 375px) {
+  .registration .registration__button {
+    margin: 0 0 40px;
+  }
+}
+
+.registration .registration__button:active {
+  background-color: #a54653;
+}
+
+.registration .registration__button:hover, .registration .registration__button:focus {
+  box-shadow: 5px 5px 10px 2px #00000066;
+  cursor: pointer;
+  outline: none;
+}
+
+.registration .registration__button::after {
+  content: url(../img/arrow-ico.svg);
+  margin: 0 20px 0;
+}
+
+.registration .registration__wrp {
+  width: 57.2%;
+}
+
+@media (max-width: 767px) {
+  .registration .registration__wrp {
+    width: 100%;
+  }
+}
+
+.registration .registration__title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .registration .registration__title {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+
+.registration .registration__text {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  margin: 22px 0;
+}
+
+@media (max-width: 767px) {
+  .registration .registration__text {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+    margin: 32px 0 22px;
+  }
+}
+
+.registration .registration__item {
+  display: flex;
+  margin: 16px 0;
+}
+
+.registration .registration__item:before {
+  content: url(../img/check-ico.svg);
+  margin: 0 23px 0 0;
+}
+
+.registration .registration__text-sub {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@media (max-width: 767px) {
+  .registration .registration__text-sub {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
 /*# sourceMappingURL=style.css.map */
